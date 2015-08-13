@@ -11,6 +11,7 @@ import UIKit
 class TodoTableViewController: UIViewController, UITableViewDataSource {
 
     var tableView: UITableView?
+    var todo = TodoDataManager.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class TodoTableViewController: UIViewController, UITableViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    /*
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -47,6 +48,7 @@ class TodoTableViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = "todo"
         return cell
     }
+    */
 
     /*
     // MARK: - Navigation
@@ -58,4 +60,18 @@ class TodoTableViewController: UIViewController, UITableViewDataSource {
     }
     */
 
+}
+
+extension TodoTableViewController : UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.todo.size
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let row = indexPath.row
+        
+        let cell = UITableViewCell(style: .Default, reuseIdentifier: nil)
+        cell.textLabel?.text = self.todo[row].title
+        
+        return cell
+    }
 }

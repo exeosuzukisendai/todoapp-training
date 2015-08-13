@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90558C9C1B7CBC8000B0D10E /* TodoDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90558C9B1B7CBC8000B0D10E /* TodoDataManager.swift */; };
 		90F2C1481B7758FA00305BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F2C1471B7758FA00305BFF /* AppDelegate.swift */; };
 		90F2C14A1B7758FA00305BFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F2C1491B7758FA00305BFF /* ViewController.swift */; };
 		90F2C14D1B7758FA00305BFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F2C14B1B7758FA00305BFF /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90558C9B1B7CBC8000B0D10E /* TodoDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoDataManager.swift; sourceTree = "<group>"; };
 		90F2C1421B7758FA00305BFF /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F2C1461B7758FA00305BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F2C1471B7758FA00305BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				90F2C1501B7758FA00305BFF /* LaunchScreen.xib */,
 				90F2C1451B7758FA00305BFF /* Supporting Files */,
 				90F2C1671B775B9400305BFF /* TodoTableViewController.swift */,
+				90558C9B1B7CBC8000B0D10E /* TodoDataManager.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				90F2C14A1B7758FA00305BFF /* ViewController.swift in Sources */,
 				90F2C1681B775B9400305BFF /* TodoTableViewController.swift in Sources */,
 				90F2C1481B7758FA00305BFF /* AppDelegate.swift in Sources */,
+				90558C9C1B7CBC8000B0D10E /* TodoDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				90F2C1631B7758FB00305BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90F2C1641B7758FB00305BFF /* Build configuration list for PBXNativeTarget "TodoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				90F2C1661B7758FB00305BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
